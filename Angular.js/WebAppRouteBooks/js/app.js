@@ -1,0 +1,19 @@
+var app= angular.module('bookApp',['ngRoute']);
+app.config(function($routeProvider){
+    $routeProvider
+    .when('/',{
+        controller:'bookController',
+        templateUrl:'views/bookprincipal.html'
+    })
+    .when('/book/:id',{
+        controller:'bookDetalleController',
+        templateUrl:'views/bookdetalle.html'
+    })
+    .when('/book/:id/capitulos/:capId',{
+        controller:'bookDetalleCapitulosController',
+        templateUrl:'views/bookdetallecapitulos.html'
+    })
+    .otherwise({
+        redirectTo:'/'
+    })
+})

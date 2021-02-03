@@ -1,0 +1,33 @@
+{{title}}
+<h1>Hola</h1>
+{{day.date|date:'dd/MM/yyyy'}}
+
+<h2 class="date">{{day.date}}</h2>
+<h3>En day.html</h3>
+
+<div class="event" ng-repeat="fila in day.events">
+    <a href="#!/{{$index}}">
+        <h3 class="name">{{fila.name}}</h3>  </a>
+
+        <a href="#!/{{$index}}">
+            <p>
+                <span class="from">{{fila.from}}</span>
+            </p>
+        </a>
+       
+        <a href="#!/{{$index}}">
+            <p>
+                <span class="to">{{fila.to}}</span>
+            </p>
+    
+        </a>
+      
+        <a href="#!/{{$index}}">
+            <p>
+                <span class="where">{{fila.where}}</span>
+            </p>
+        </a>
+       
+
+  
+</div>

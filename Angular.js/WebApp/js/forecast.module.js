@@ -1,0 +1,1 @@
+var forecastModuleObj= angular.module('forecastModule',[]);
